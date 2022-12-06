@@ -1,4 +1,4 @@
-// leetcode link:https://leetcode.com/problems/middle-of-the-linked-list/description/
+// leetcode link:https://leetcode.com/problems/middle-of-the-linked-list/
 
 
 // leetcode sloution:
