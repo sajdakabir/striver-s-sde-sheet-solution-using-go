@@ -38,3 +38,29 @@ public:
         return f(n-1,nums,dp);
     }
 };
+
+// Tabulation
+
+
+class Solution {
+public:
+    int f(int n,vector<int>&nums,vector<int>&dp){
+        dp[0]=nums[0];
+      
+        for(int i=1;i<n;i++){
+              int rob=nums[i];
+            if(i>1){
+                rob+=dp[i-2];
+            }
+        int nonRob=0+dp[i-1];
+        dp[i]=max(rob,nonRob);
+        }
+
+       return dp[n-1];
+    }
+    int rob(vector<int>& nums) {
+        int n=nums.size();
+        vector<int>dp(n,-1);
+        return f(n,nums,dp);
+    }
+};
