@@ -4,8 +4,6 @@ func setZeroes(matrix [][]int) {
 	fmt.Println(m)
 	var col = make([]int, m)
 	var row = make([]int, n)
-	// col:=[m]int
-	// row:=[n]int
 
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
